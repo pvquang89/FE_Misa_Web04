@@ -1,9 +1,5 @@
 # Demo giao diện danh sách ứng viên (AMIS Tuyển dụng)
 
-## Giới thiệu
-Dự án demo giao diện **Danh sách ứng viên** mô phỏng theo hệ thống **AMIS Tuyển dụng**.  
-
-
 ## Chức năng
 
 ### 1. Hiển thị danh sách ứng viên
