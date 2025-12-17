@@ -1,0 +1,264 @@
+<div id="candidateModal" class="misa-modal hidden" role="dialog" aria-modal="true" aria-labelledby="candidateModalTitle">
+  <div class="misa-modal__overlay" data-close="1"></div>
+
+  <div class="misa-modal__card">
+    <div class="misa-modal__header">
+      <h2 id="candidateModalTitle" class="misa-modal__title">Thêm ứng viên</h2>
+      <button type="button" class="misa-modal__close" data-close="1" aria-label="Close">×</button>
+    </div>
+
+    <div class="misa-modal__content">
+      <div class="cv-dropzone">
+        <div class="cv-dropzone__text">
+          <a href="javascript:void(0)">Kéo thả hoặc bấm vào đây để tải CV lên</a>
+        </div>
+        <div class="cv-dropzone__hint">
+          Chấp nhận file .doc, .docx, .pdf, .jpg, .jpeg, .png (Dung lượng &lt; hơn 15 Mb)
+        </div>
+      </div>
+
+      <form id="candidateForm" class="candidate-form">
+        <input type="hidden" name="id" />
+
+        <div class="candidate-form__grid">
+          <div class="candidate-form__left">
+            <div class="avatar-uploader">
+              <div class="avatar-uploader__circle">Ảnh</div>
+            </div>
+          </div>
+
+          <div class="candidate-form__right">
+            <div class="form-row form-row--full">
+              <label class="form-label">Họ và tên <span class="req">*</span></label>
+              <input class="form-input" name="fullName" placeholder="Nhập họ và tên" required />
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Ngày sinh</label>
+              <div class="input-with-date">
+                <input class="form-input" name="dob" type="date" />
+                <button
+                  type="button"
+                  class="date-btn"
+                  aria-label="Chọn ngày sinh"
+                  onclick="this.previousElementSibling?.showPicker?.(); this.previousElementSibling?.focus();"
+                ></button>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Giới tính</label>
+              <div class="select-with-caret">
+                <select class="form-select" name="gender">
+                  <option value="">Chọn giới tính</option>
+                  <option value="Nam">Nam</option>
+                  <option value="Nữ">Nữ</option>
+                  <option value="Khác">Khác</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row form-row--full">
+              <label class="form-label">Khu vực</label>
+              <div class="input-with-more">
+                <div class="select-with-caret">
+                  <select class="form-select" name="area">
+                    <option value="">Chọn giá trị</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="TP.HCM">TP.HCM</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                  </select>
+                </div>
+                <button type="button" class="more-btn" aria-label="more">…</button>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Số điện thoại</label>
+              <input class="form-input" name="phone" placeholder="Nhập số điện thoại" />
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Email</label>
+              <input class="form-input" name="email" type="email" placeholder="Nhập Email" />
+            </div>
+
+            <div class="form-row form-row--full">
+              <label class="form-label">Địa chỉ</label>
+              <input class="form-input" name="address" placeholder="Nhập địa chỉ" />
+            </div>
+
+            <div class="section-title">HỌC VẤN</div>
+
+            <div class="form-row form-row--full form-row--inline">
+              <label class="form-label form-label--dot">Trình độ đào tạo</label>
+              <div class="input-with-actions">
+                <input class="form-input" name="eduLevel" placeholder="Nhập trình độ đào tạo" />
+                <button type="button" class="action-plus" aria-label="add">
+                  <span class="icon-plus-blue" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="action-caret" aria-label="open">▾</button>
+              </div>
+            </div>
+
+            <div class="form-row form-row--full form-row--inline">
+              <label class="form-label form-label--dot">Nơi đào tạo</label>
+              <div class="input-with-actions">
+                <input class="form-input" name="school" placeholder="Nhập nơi đào tạo" />
+                <button type="button" class="action-plus" aria-label="add">
+                  <span class="icon-plus-blue" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="action-caret" aria-label="open">▾</button>
+              </div>
+            </div>
+
+            <div class="form-row form-row--full form-row--inline">
+              <label class="form-label form-label--dot">Chuyên ngành</label>
+              <div class="input-with-actions">
+                <input class="form-input" name="major" placeholder="Nhập chuyên ngành" />
+                <button type="button" class="action-plus" aria-label="add">
+                  <span class="icon-plus-blue" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="action-caret" aria-label="open">▾</button>
+              </div>
+            </div>
+
+            <!-- ADDED: link thêm học vấn -->
+            <div class="form-row form-row--full">
+              <a class="form-link" href="javascript:void(0)">+ Thêm học vấn</a>
+            </div>
+
+            <!-- ADDED: Ngày ứng tuyển + Nguồn ứng viên -->
+            <div class="form-row">
+              <label class="form-label">Ngày ứng tuyển <span class="req">*</span></label>
+              <div class="input-with-date">
+                <input class="form-input" name="appliedDate" type="date" required />
+                <button
+                  type="button"
+                  class="date-btn"
+                  aria-label="Chọn ngày ứng tuyển"
+                  onclick="this.previousElementSibling?.showPicker?.(); this.previousElementSibling?.focus();"
+                ></button>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Nguồn ứng viên</label>
+              <div class="select-with-caret">
+                <select class="form-select" name="source">
+                  <option value="">Chọn nguồn ứng viên</option>
+                  <option value="Website công ty">Website công ty</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="LinkedIn">LinkedIn</option>
+                  <option value="Group tuyển dụng">Group tuyển dụng</option>
+                  <option value="Giới thiệu nội bộ">Giới thiệu nội bộ</option>
+                  <option value="Hội chợ việc làm">Hội chợ việc làm</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Nhân sự khai thác</label>
+              <div class="select-with-caret">
+                <select class="form-select" name="exploiter">
+                  <option value="">Chọn nhân sự khai thác</option>
+                  <option value="Đinh Ngọc QTHT">Đinh Ngọc QTHT</option>
+                  <option value="HR - Minh">HR - Minh</option>
+                  <option value="HR - Lan">HR - Lan</option>
+                  <option value="HR - Hòa">HR - Hòa</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">Cộng tác viên</label>
+              <div class="select-with-caret">
+                <select class="form-select" name="collaborator">
+                  <option value="">Chọn cộng tác viên</option>
+                  <option value="CTV - 01">CTV - 01</option>
+                  <option value="CTV - 02">CTV - 02</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- ADDED: checkbox tham chiếu -->
+            <div class="form-row form-row--full">
+              <label class="form-checkbox">
+                <input type="checkbox" name="quickAddRefToTalentPool" />
+                <span>Thêm nhanh người tham chiếu vào kho ứng viên</span>
+              </label>
+            </div>
+
+            <!-- ADDED: người giới thiệu -->
+            <div class="form-row form-row--full">
+              <a class="form-link" href="javascript:void(0)">+ Thêm người giới thiệu</a>
+            </div>
+
+            <div class="form-row form-row--full">
+              <label class="form-label">Người giới thiệu</label>
+              <input class="form-input" name="referrer" placeholder="Nhập người giới thiệu" />
+            </div>
+
+            <!-- ADDED: nơi làm việc gần đây -->
+            <div class="form-row form-row--full">
+              <label class="form-label">Nơi làm việc gần đây</label>
+              <input class="form-input" name="recentWork" placeholder="Nhập nơi làm việc gần đây" />
+            </div>
+
+            <!-- ADDED: kinh nghiệm làm việc -->
+            <div class="form-row form-row--full">
+              <a class="form-link" href="javascript:void(0)">+ Thêm kinh nghiệm làm việc</a>
+            </div>
+
+            <div class="form-row form-row--full">
+              <label class="form-label">Nơi làm việc</label>
+              <input class="form-input" name="workplace" placeholder="Nhập nơi làm việc" />
+            </div>
+
+
+            <div class="form-row form-row--full">
+              <label class="form-label">Thời gian</label>
+              <div class="form-row__two">
+                <div class="input-with-date">
+                  <input class="form-input" name="workFrom" type="month" placeholder="MM/yyyy" />
+                  <button
+                    type="button"
+                    class="date-btn"
+                    onclick="this.previousElementSibling?.showPicker?.(); this.previousElementSibling?.focus();"
+                  ></button>
+                </div>
+
+                <span class="dash">-</span>
+
+                <div class="input-with-date">
+                  <input class="form-input" name="workTo" type="month" placeholder="MM/yyyy"/>
+                  <button
+                    type="button"
+                    class="date-btn"
+                    onclick="this.previousElementSibling?.showPicker?.(); this.previousElementSibling?.focus();"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-row form-row--full">
+              <label class="form-label">Vị trí công việc</label>
+              <input class="form-input" name="workTitle" placeholder="Nhập vị trí công việc" />
+            </div>
+
+            <div class="form-row form-row--full">
+              <label class="form-label">Mô tả công việc</label>
+              <textarea class="form-textarea" name="workDescription" placeholder="Nhập mô tả công việc"></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="misa-modal__footer">
+      <button type="button" class="btn btn-ghost" data-close="1">Hủy</button>
+      <button type="submit" form="candidateForm" class="btn btn-primary">Lưu</button>
+    </div>
+  </div>
+</div>

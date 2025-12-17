@@ -1,0 +1,360 @@
+/* Toast */
+.toast-host{
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  display: grid;
+  gap: 8px;
+  z-index: 9999;
+}
+.toast{
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: all .2s ease;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  font-size: 13px;
+  max-width: 360px;
+}
+.toast.show{ opacity: 1; transform: translateY(0); }
+.toast-success{ background: #067647; }
+.toast-error{ background: #b42318; }
+
+.misa-modal.hidden { display: none; }
+
+.misa-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+}
+
+.misa-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.misa-modal__card {
+  position: relative;
+  width: min(570px, calc(100vw - 48px));
+    height: 95% !important;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.misa-modal__header {
+  height: 64px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.misa-modal__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.misa-modal__close {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: #555;
+}
+.misa-modal__close:hover { background: #f5f5f5; }
+
+.misa-modal__content {
+  padding: 16px 20px;
+  overflow: auto;              
+  flex: 1;
+}
+
+.misa-modal__footer {
+  height: 64px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #e6e6e6;
+  background: #f3f4f6;       
+}
+
+/* Dropzone */
+.cv-dropzone {
+  border: 1px dashed #d7d7d7;
+  border-radius: 6px;
+  padding: 18px 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.cv-dropzone__text a{
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+.cv-dropzone__hint{
+  margin-top: 6px;
+  color: #777;
+  font-size: 13px;
+}
+/* Placeholder mờ hơn */
+.form-input::placeholder{
+  color: #9aa0a6;
+  opacity: 1; 
+}
+.form-textarea::placeholder{
+  color: #9aa0a6;
+  opacity: 1; 
+}
+.form-select{
+  color: #9aa0a6; 
+}
+/* Form layout */
+.candidate-form__grid{
+  display: grid;
+  grid-template-columns: 80px 1fr; 
+  
+  align-items: start;
+}
+
+.avatar-uploader{
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+}
+.avatar-uploader__circle{
+  width: 63px;
+  height: 63px;
+  border-radius: 999px;
+  border: 1px dashed #d7d7d7;
+  color: #9aa0a6;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  /* background: #fafafa; */
+}
+
+.candidate-form__right{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 16px;
+  padding-top: 10px;
+}
+
+.form-row { display: grid; }
+.form-row--full { grid-column: 1 / -1; }
+
+.form-label{
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(30, 38, 51)   ;
+}
+.req{ color: #d92d20; }
+
+.form-input,
+.form-select{
+  height: 32px;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+}
+.form-input:focus,
+.form-select:focus{
+  border-color: #2563eb;
+}
+
+.section-title{
+  grid-column: 1 / -1;
+  margin-top: 6px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  color: #111;
+}
+
+.input-with-more{
+  display: grid;
+  grid-template-columns: 1fr 40px;
+
+}
+.more-btn{
+  height: 32px;
+    width: 32px;
+    border: 1px solid #e0e0e0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0;
+    top: 0;
+    right: 0;
+}
+
+.form-row--inline{
+  grid-template-columns: 130px 1fr;
+  align-items: center;
+    justify-content: space-between !important;
+}
+.form-row--inline .form-label{
+  margin: 0;
+  white-space: nowrap;
+}
+.form-textarea{
+      font-weight: 400;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    text-overflow: ellipsis;
+     border: 1px solid #e5e7eb;
+    min-height: 32px;
+    padding: 6px 16px;
+    height: 99px;
+    font-size: 14px !important;
+}
+
+.form-label--dot::before{
+  content: "•";
+  color: #9aa0a6;
+  margin-right: 8px;
+}
+
+.input-with-actions{
+  display: grid;
+  grid-template-columns: 1fr 40px 40px;
+  gap: 0;
+}
+
+.input-with-actions .form-input{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.action-plus,
+.action-caret{
+  height: 32px;
+  border: 1px solid #e5e7eb;
+  border-left: 0;
+  background: #fff;
+  cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-plus{
+  color: transparent;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.action-caret{
+  color: transparent;     
+  font-size: 0;           
+}
+.action-caret::before{
+  content: "";
+  display: inline-block;
+
+  /* sprite icon */
+  background: url("https://amisplatform.misacdn.net/apps/recruit/assets/images/ICON.svg") no-repeat;
+  background-position: -32px -48px; 
+  width: 16px;
+  height: 16px;
+
+
+  transform-origin: center;
+}
+
+.action-plus:hover,
+.action-caret:hover{
+  filter: brightness(0.98);
+}
+
+.select-with-caret{
+  position: relative;
+  width: 100%;
+}
+
+.select-with-caret .form-select{
+  width: 100%;
+  padding-right: 36px;       
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;     
+}
+
+.select-with-caret::after{
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 25%;
+  width: 16px;
+  height: 16px;
+  transform-origin: center;
+  pointer-events: none;
+
+  background: url("https://amisplatform.misacdn.net/apps/recruit/assets/images/ICON.svg") no-repeat;
+  background-position: -32px -48px; 
+}
+
+.input-with-date{
+  position: relative;
+  width: 100%;
+}
+
+.input-with-date .form-input{
+  width: 100%;
+  margin-top: 16px;
+
+}
+
+.form-row__two{
+  display: grid;
+  grid-template-columns: 1fr 16px 1fr; 
+  align-items: center;
+  column-gap: 12px;
+}
+
+.form-row__two .dash{
+  text-align: center;
+  color: #9aa0a6;
+}
+
+.form-row__two .input-with-date{
+  width: 100%;
+}
+
+@media (max-width: 520px){
+  .form-row__two{
+    grid-template-columns: 1fr; 
+    row-gap: 8px;
+  }
+  .form-row__two .dash{
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,300 @@
+.sidebar-item a .item-content .icon-sb-recruiment{
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -98px -114px;
+}
+.sidebar-item a .item-content .icon-sb-candidate{
+    width: 21px;
+    height: 19px;
+    min-width: 21px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -26px -114px;
+}
+.sidebar-item a .item-content .icon-sb-calendar{
+    width: 16px;
+    height: 20px;
+    min-width: 20px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -146px -114px;
+}
+.sidebar-item a .item-content .icon-sb-talent-pools{
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -2px -114px;
+}
+.sidebar-item a .item-content .icon-sb-recruiment-campaign-active{
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -73px -633px;
+}
+.sidebar-item a .item-content .icon-sb-task{
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -338px -113px;
+}
+.sidebar-item a .item-content .icon-email-ai-marketing{
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -162px -252px;
+}
+.sidebar-item a .item-content .icon-chat-box{
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -74px -847px;
+}
+.sidebar-item a .item-content .icon-sb-report{
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -73px -114px;
+}
+.sidebar-item a .item-content .icon-sb-setting{
+    width: 18px;
+    height: 4px;
+    min-width: 18px;
+    background-color: #c5ccd5;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -362px -624px;
+}.bottom-area .icon-left{
+    width: 9px;
+    height: 14px;
+    min-width: 9px;
+    background-color: #ffffff;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -199px -141px;
+}
+.bottom-area .icon-right{
+    width: 9px;
+    height: 14px;
+    min-width: 9px;
+    background-color: #ffffff;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -224px -141px;
+    display: flex;
+    justify-content: center;
+}
+.title-header .title-right .item-head-left .icon-add{
+    margin-top: -2px;
+    background-color: #ffffff !important;
+    margin-bottom: 2px !important;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: none;
+    margin-bottom: 2px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+	width: 14px;
+	height: 14px;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -369px -705px;
+    background-color: #7a8188;
+}
+.title-header .title-right .more-insert-option .icon-down{
+    margin-left: 9px !important;
+    width: 12px;
+    height: 7px;
+    min-width: 12px;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -36px -807px;
+    background-color: #ffffff;
+}
+/* .icon-calendar  */
+.icon-calendar {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 22 6.5v14A2.5 2.5 0 0 1 19.5 23h-15A2.5 2.5 0 0 1 2 20.5v-14A2.5 2.5 0 0 1 4.5 4H6V3a1 1 0 0 1 1-1Zm13 9H4v9.5c0 .276.224.5.5.5h15a.5.5 0 0 0 .5-.5V11ZM19.5 6h-15a.5.5 0 0 0-.5.5V9h16V6.5a.5.5 0 0 0-.5-.5Z'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 22 6.5v14A2.5 2.5 0 0 1 19.5 23h-15A2.5 2.5 0 0 1 2 20.5v-14A2.5 2.5 0 0 1 4.5 4H6V3a1 1 0 0 1 1-1Zm13 9H4v9.5c0 .276.224.5.5.5h15a.5.5 0 0 0 .5-.5V11ZM19.5 6h-15a.5.5 0 0 0-.5.5V9h16V6.5a.5.5 0 0 0-.5-.5Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  color: #6b7280;
+}
+/* icon plus blu */
+.icon-plus-blue{
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  display: inline-block;
+
+  background-color: #2680eb;
+
+  -webkit-mask-image: url("https://amisplatform.misacdn.net/apps/recruit/assets/images/ICON.svg");
+  -webkit-mask-position: -369px -705px;
+  -webkit-mask-repeat: no-repeat;
+
+          mask-image: url("https://amisplatform.misacdn.net/apps/recruit/assets/images/ICON.svg");
+          mask-position: -369px -705px;
+          mask-repeat: no-repeat;
+}
+.icon-edit {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    mask-repeat: no-repeat;
+    mask-image: url(https://amisplatform.misacdn.net/apps/recruit/assets/images/ICON.svg);
+    mask-position: -180px -656px;
+    mask-repeat: no-repeat;
+    background-color: #7a8188;
+}
+.icon-right-page{
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    mask-image: url(https://amisplatform.misacdn.net/apps/recruit/assets/images/ICON.svg);
+
+    mask-position: -40px -696px;
+    mask-repeat: no-repeat;
+    background-color: #7a8188;
+}
+.icon-left-page {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    mask-repeat: no-repeat;
+ 
+    mask-image: url(https://amisplatform.misacdn.net/apps/recruit/assets/images/ICON.svg);
+    mask-position: -60px -696px;
+    background-color: #7a8188;
+}
+.toolbar-grid-right .icon-interactive-history{
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: 0 -844px;
+    background-color: #7a8188 !important;
+}
+.toolbar-grid-right .filter-area .icon-filter{
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -42px -658px;
+    background-color: #7a8188 !important;
+}
+.toolbar-grid-right .icon-export{
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    mask-image: url('../assets/icons/ICON.svg');
+    mask-repeat: no-repeat;
+    mask-position: -62px -658px;
+    background-color: #7a8188 !important;
+}
+
+.navbar-right-container .cs-store .store-icon{
+    height: 20px;
+    aspect-ratio: 1 / 1;
+    background: url(https://cdnstore.misacdn.net/lib/static/cs-icon-store.svg) no-repeat center;
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+
+.icon-email,
+.icon-tag,
+.icon-document-check,
+.icon-sb-recruiment-campaign,
+.icon-delete,
+.icon-more-vertical{
+  display: inline-block;
+  vertical-align: middle;
+
+  background-color: #7a8188;
+
+  -webkit-mask-image: url('../assets/icons/ICON.svg');
+  -webkit-mask-repeat: no-repeat;
+
+  mask-image: url('../assets/icons/ICON.svg');
+  mask-repeat: no-repeat;
+}
+
+.icon-email{
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+
+  -webkit-mask-position: -260px -656px;
+  mask-position: -260px -656px;
+}
+
+.icon-tag{
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+
+  -webkit-mask-position: -300px -656px;
+  mask-position: -300px -656px;
+}
+
+.icon-document-check{
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+
+  -webkit-mask-position: -340px -656px;
+  mask-position: -340px -656px;
+}
+
+.icon-sb-recruiment-campaign{
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+
+  -webkit-mask-position: -73px -633px;
+  mask-position: -73px -633px;
+}
+.icon-more-vertical {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+-webkit-mask-position: -96px -80px;
+    mask-position: -96px -80px;
+    background-color: #7a8188;
+}
+.icon-delete {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: -220px -656px ;
+    mask-position: -220px -656px;
+    background-color: rgb(255, 0, 0);
+}

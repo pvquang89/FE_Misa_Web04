@@ -1,0 +1,50 @@
+.btn{
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-ghost{
+  background: transparent;
+  color: #111;
+}
+.btn-primary{
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+  min-width: 92px;
+}
+
+.date-btn{
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+.date-btn::before{
+  content: "\f026";
+  position: absolute;
+  display: block;
+  width: 18px;
+  top: 50%;
+  margin-top: -9px;
+  left: 50%;
+  margin-left: -9px;
+
+  color: #6b6b6b; 
+  font-size: 18px;
+  line-height: 18px;
+
+  font-family: "Font Awesome 5 Free","Font Awesome 6 Free","FontAwesome",sans-serif;
+  font-weight: 900;
+}

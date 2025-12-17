@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/commons.css" />
+    <title>Ứng viên | CÔNG TY CỔ PHẦN SỬA CHỮA NHIỆT ĐIỆN BẮC NAM | AMIS Tuyển dụng</title>
+  </head>
+  <body>
+    <header>
+      <div class="app-navbar">
+        <div class="navbar-wrap">
+          <div class="navbar-left-container">
+            <div class="navbar-title d-flex align-items-center p-l-16">
+              <div class="booking-title pointer">
+                <div class="navbar-icon icon-switch pointer"></div>
+              </div>
+              <div class="pos-relative mx-3">
+                <div class="navbar-logo-container pointer">
+                  <div class="navbar-icon logo-recruiment"></div>
+                </div>
+                <div class="navbar-bg"></div>
+              </div>
+              <div class="title-name pointer m-r-24">Tuyển dụng</div>
+            </div>
+            <div class="wrap-navbar-search d-flex align-items-center">
+              <div class="navbar-search">
+                <div class="text-editor-container">
+                  <div class="text-editor">
+                    <div class="icon-search"></div>
+                    <input
+                      oninput="onInputChange()"
+                      id="text-editor-input"
+                      autocomplete="off"
+                      placeholder="Tìm kiếm tin tuyển dụng, ứng viên, nhân tài..."
+                    />
+                  </div>
+                  <div class="text-editor-button-container">
+                    <span class="clear-button-area">
+                      <span
+                        class="icon-clear"
+                        onclick="clearSearchInput()"
+                      ></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-right-container">
+            <div
+              onclick="targetBlankRecruitmentLinks()"
+              class="recruiment-page d-flex pointer m-r-20 no-bg btn-secondary-2 no-box-shadow-hover"
+            >
+              <div class="icon-global m-r-10 m-t-3"></div>
+              <div class="icon-text">Website tuyển dụng</div>
+            </div>
+            <div class="notification-icon-container">
+              <div class="icon-notification"></div>
+            </div>
+            <div class="integration-cart mr-3">
+              <div class="cs-store">
+                <div class="store-icon"></div>
+                <div class="store-notice">2</div>
+              </div>
+            </div>
+            <div class="user-control-panel d-flex">
+              <div class="invite-box apui-user-controlpanel-item"></div>
+              <div class="message-box apui-user-controlpanel-item"></div>
+              <div class="noti-box apui-user-controlpanel-item">
+                <div class="noti-number">4</div>
+              </div>
+              <div class="help-menu apui-user-controlpanel-item"></div>
+              <div class="more-menu apui-user-controlpanel-item"></div>
+              <div class="knowledge-menu apui-user-controlpanel-item"></div>
+              <div class="user-menu apui-user-controlpanel-item">
+                <div class="avatar-account">
+                  <img
+                    src="https://amisplatform.misacdn.net/APIS/PlatformAPI/api/Avatar/77b8feac-dfe5-4b47-b1ff-ac9a2eaced5a/LT0YJBOP.jpg?avatarID=03762a31-c8c5-45ae-887b-17bcdc47043b&width=64&height=64"
+                    alt="avatar"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="app-sidebar">
+        <div id="sidebar" class="sidebar-expand-mode">
+          <div class="sidebar-item-list">
+            <div class="sidebar-container">
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-sb-recruiment item-icon"></div>
+                    <div class="icon-text" title="Tin tuyển dụng">
+                      Tin tuyển dụng
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-sb-candidate item-icon"></div>
+                    <div class="icon-text" title="Ứng viên">Ứng viên</div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-sb-calendar item-icon"></div>
+                    <div class="icon-text" title="Lịch">Lịch</div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-sb-talent-pools item-icon"></div>
+                    <div class="icon-text" title="Kho tiềm năng">
+                      Kho tiềm năng
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div
+                      class="icon-sb-recruiment-campaign-active item-icon"
+                    ></div>
+                    <div class="icon-text" title="Chiến dịch tuyển dụng">
+                      Chiến dịch tuyển dụng
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-sb-task item-icon"></div>
+                    <div class="icon-text" title="Công việc">Công việc</div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-email-ai-marketing item-icon"></div>
+                    <div class="icon-text" title="aiMarketing">aiMarketing</div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-chat-box item-icon"></div>
+                    <div class="icon-text" title="Trao đổi với ứng viên">
+                      Trao đổi với ứng viên
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-sb-report item-icon"></div>
+                    <div class="icon-text" title="Báo cáo">Báo cáo</div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-item pointer">
+                <a href="#">
+                  <div
+                    class="item-content d-flex h-100 align-items-center pos-relative"
+                  >
+                    <div class="icon-sb-setting item-icon"></div>
+                    <div class="icon-text" title="Khác">Khác</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="bottom-area pos-absolute w-100">
+              <div
+                onclick="collapseSidebar()"
+                class="collapse-btn d-flex align-items-center pointer border"
+              >
+                <div id="icon-left" class="item-icon icon-left"></div>
+                <div class="icon-text text-content">Thu gọn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recruiment-app-content-container">
+        <div class="app-candidates">
+          <div class="app-candidates-layout d-flex dis-flex-grow dis-flex-row">
+            <div
+              class="list-candidate-center d-flex dis-flex-grow dis-flex-column"
+            >
+              <div class="title-header">
+                <div class="title-left">Ứng viên</div>
+                <div class="title-right d-flex">
+                    <button id="btnAddCandidate" type="button" class="btn btn-primary item-head-left">
+                      <div class="icon-add"></div>
+                      <span class="title-name pl-2">Thêm ứng viên</span>
+                    </button>
+                  <div
+                    class="more-insert-option d-flex justify-content-center align-items-center"
+                  >
+                    <div class="btn-dropdown">
+                      <div class="toggle-down">
+                        <div class="icon-down"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="candidates-wrapper">
+                <div class="candidates-wrapper-content d-flex flex-col">
+                  <div class="candidate-wrapper-content-grid">
+                    <div class="toolbar-grid bg-white">
+                      <div
+                        class="toolbar-container d-flex align-items-center justify-content-between"
+                      >
+                        <div class="toolbar-grid-default">
+                          <div class="toolbar-grid-left">
+                            <div class="search-grid d-flex">
+                              <div class="search-ontab">
+                                <div class="texteditor-container wrap-icon-button-toolbar">
+                                  <div class="button-container">
+                                    <div class="ai-search">
+                                      <div class="button-content">
+                                        <i class="search"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="input-container ">
+                                    <input
+                                      class="text-editor-input"
+                                      id="candidateQuickSearch"
+                                      type="search"
+                                      placeholder="Tìm kiếm hoặc nhờ AI trợ giúp"
+                                      autocomplete="off"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="toolbar-grid-right">
+                            <div
+                              class="filter-area wrap-icon-button-toolbar m-r-8"
+                              title="Bộ lọc"
+                            >
+                              <div class="icon-filter ic-svg"></div>
+                            </div>
+                            <div
+                              class="wrap-icon-button-toolbar m-r-8"
+                              title="Xuất khẩu"
+                            >
+                              <div class="icon-export ic-svg"></div>
+                            </div>
+                            <div
+                              class="wrap-icon-button-toolbar m-r-8"
+                              title="Xem nhanh hoạt động"
+                            >
+                              <div
+                                class="icon-interactive-history ic-svg"
+                              ></div>
+                            </div>
+                            <div class="z-index-default dropdown">
+                              <div class="wrap-icon-button-setting">
+                                <div class="icon-setting ic-svg"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="toolbar-grid-selected">
+                        <div class="toolbar-grid-left d-flex align-items-center">
+                          <div class="selection-count">
+                            <strong id="selectedCount">0</strong> đang chọn
+                          </div>
+                          <button id="btnClearSelection" type="button" class="btn-link m-l-12">Bỏ chọn</button>
+                        </div>
+
+                        <div class="toolbar-grid-right d-flex align-items-center">
+                            <button type="button" class="btn btn-secondary-2 wrap-icon-button-toolbar m-r-8">
+                              <span class="icon-email m-r-8"></span>
+                              Gửi email
+                            </button>
+
+                            <button type="button" class="btn btn-secondary-2 wrap-icon-button-toolbar m-r-8">
+                              <span class="icon-tag m-r-8"></span>
+                              Quản lý thẻ
+                            </button>
+
+                            <button type="button" class="btn btn-secondary-2 wrap-icon-button-toolbar m-r-8">
+                              <span class="icon-document-check m-r-8"></span>
+                              Tạo công việc
+                            </button>
+
+                            <button type="button" class="btn btn-secondary-2 wrap-icon-button-toolbar m-r-8">
+                              <span class="icon-sb-recruiment-campaign m-r-8"></span>
+                              Thêm vào chiến dịch
+                            </button>
+                          <button id="btnDeleteSelected" class="btn btn-secondary-2 wrap-icon-button-toolbar m-r-8" type="button" >
+                            <span class="icon-delete m-r-8"></span>
+                            Xóa ứng viên
+                          </button>
+                          <button type="button" class="btn btn-secondary-2">
+                            <span class="icon-more-vertical m-r-8"></span>
+                          </button>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="table-candidate">
+                      <div class="table-wrap table-scroll">
+                        <table class="candidates-table">
+                          <thead>
+                            <tr>
+                              <th class="col-checkbox">
+                                <input id="checkAllCandidates" type="checkbox" aria-label="select all" />
+                              </th>
+
+                              <th class="col-phone">Số điện thoại</th>
+                              <th class="col-source">Nguồn ứng viên</th>
+                              <th class="col-name">Họ và tên</th>
+                              <th class="col-email">Email</th>
+                              <th class="col-campaign">Chiến dịch tuyển dụng</th>
+                              <th class="col-position">Vị trí tuyển dụng</th>
+
+                              <!-- ADDED COLUMNS -->
+                              <th class="col-job">Tin tuyển dụng</th>
+                              <th class="col-recruit-stage">Vòng tuyển dụng</th>
+                              <th class="col-rate">Đánh giá</th>
+                              <th class="col-applied-date">Ngày ứng tuyển</th>
+                              <th class="col-edu-level">Trình độ đào tạo</th>
+                              <th class="col-school">Nơi đào tạo</th>
+                              <th class="col-major">Chuyên ngành</th>
+                              <th class="col-recent-work">Nơi làm việc gần đây</th>
+                              <th class="col-exploit">Nhân sự khai thác</th>
+                              <th class="col-unit">Đơn vị sử dụng</th>
+                              <th class="col-persona ">Phù hợp với chân dung</th>
+                              <th class="col-area">Khu vực</th>
+                              <th class="col-referrer">Người giới thiệu</th>
+                              <th class="col-reception-info">Thông tin tiếp nhận</th>
+                              <th class="col-talent-pool">Thuộc kho tiềm năng</th>
+
+                              <!-- NEW: actions column -->
+                              <th class="col-actions" aria-label="Hành động"></th>
+                            </tr>
+                          </thead>
+
+                          <tbody id="candidateTbody"></tbody>
+                        </table>
+                      </div>
+
+                      <div class="table-footer d-flex">
+                        <div class="total">
+                          Tổng: <strong id="candidateTotalCount">0</strong> bản ghi
+                        </div>
+                        <div class="pagination-area">
+                          <label class="per-page"
+                            >Số bản ghi/trang
+                            <select id="perPageSelect">
+                              <option>25</option>
+                              <option>50</option>
+                              <option>100</option>
+                            </select>
+                          </label>
+                        
+                          <div class="page-info" id="pageInfo">0 - 0 bản ghi</div>
+                          <button type="button" class="icon-left-page" id="pagePrev" aria-label="Previous page">‹</button>
+                          <button type="button" class="icon-right-page" id="pageNext" aria-label="Next page">›</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <div id="modalMount"></div>
+
+    <!-- Scripts -->
+    <script src="./js/data/candidate-data.js"></script>
+    <script src="./js/components/toast.js"></script>
+
+    <script src="./js/features/candidates/candidate.modal.js"></script>
+    <script src="./js/features/candidates/candidates.selection.js"></script>
+    <script src="./js/utils/common.js"></script>
+    <script src="./js/components/confirm-modal.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/features/header/header-actions.js"></script>
+    <script src="./js/features/layout/sidebar.js"></script>
+  </body>
+</html>

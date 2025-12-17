@@ -1,0 +1,143 @@
+/* Modal */
+.modal.hidden{ display:none; }
+.modal{ position: fixed; inset: 0; z-index: 9998; }
+.modal-overlay{ position: absolute; inset: 0; background: rgba(0,0,0,.35); }
+.modal-card{
+  position: relative;
+  width: min(860px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  margin: 16px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+.modal-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+}
+.icon-btn{ border: none; background: transparent; font-size: 22px; cursor: pointer; }
+.modal-body{ padding: 16px; }
+.modal-footer{
+  display:flex;
+  justify-content:flex-end;
+  gap: 8px;
+  padding: 12px 16px 16px;
+  border-top: 1px solid #f2f2f2;
+}
+.req{ color:#d92d20; }
+.section-title{
+  font-weight: 700;
+  font-size: 13px;
+  color: #111;
+  margin-top: 6px;
+}
+.form-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 16px;
+}
+.form-grid .span-2{ grid-column: 1 / -1; }
+.form-grid label{ display:grid; gap: 6px; font-size: 13px; color:#111; }
+.form-grid input,
+.form-grid select{
+  height: 36px;
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+.form-grid input:focus,
+.form-grid select:focus{
+  border-color: #2563eb;
+}
+
+/* Toast basic styles (Created By DCHAO - 16/12/2025) */
+.misa-toast-container{
+  position: fixed !important;
+  right: 16px !important;
+  bottom: 16px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 99999 !important;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 420px;
+}
+
+.misa-toast{
+  min-height: 48px;
+  padding: 10px 16px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow: 0 10px 26px rgba(0,0,0,.18);
+}
+
+/* Success  */
+.misa-toast--success{
+  background: #59c36a;
+}
+
+/* Error */
+.misa-toast--error{
+  background: #d92d20;
+}
+
+/* Warning */
+.misa-toast--warning{
+  background: #f08c00;
+}
+
+/* Info */
+.misa-toast--info{
+  background: #2563eb;
+}
+
+/* Icon tròn trắng + dấu tick xanh */
+.misa-toast__icon{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  flex: 0 0 34px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+
+  /* inline SVG tick green */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 6L9 17l-5-5' stroke='%232da44e' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* icon theo type */
+.misa-toast--error .misa-toast__icon{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M18 6L6 18' stroke='%23d92d20' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M6 6l12 12' stroke='%23d92d20' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.misa-toast--warning .misa-toast__icon{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 3l10 18H2L12 3z' stroke='%23f08c00' stroke-width='2.4' stroke-linejoin='round'/%3E%3Cpath d='M12 9v5' stroke='%23f08c00' stroke-width='2.8' stroke-linecap='round'/%3E%3Cpath d='M12 17h.01' stroke='%23f08c00' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.misa-toast--info .misa-toast__icon{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 2a10 10 0 1010 10A10 10 0 0012 2z' stroke='%232563eb' stroke-width='2.4'/%3E%3Cpath d='M12 10v6' stroke='%232563eb' stroke-width='2.8' stroke-linecap='round'/%3E%3Cpath d='M12 7h.01' stroke='%232563eb' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.misa-toast__message{
+  line-height: 1.25;
+  white-space: nowrap;      
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

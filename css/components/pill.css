@@ -1,0 +1,55 @@
+
+.compatibility-level {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 24px;
+  min-width: 70px;
+  padding: 4px 8px;
+  border-radius: 32px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+
+  user-select: none;
+  white-space: nowrap;
+}
+
+.compatibility-level::after {
+  content: "›";
+  font-size: 18px;
+  line-height: 1;
+  margin-left: 6px;
+  opacity: 0.9;
+}
+
+/* Green */
+.compatibility-level--good {
+  background-color: #eaffee;
+  color: #2cb84b;
+}
+
+/* Orange */
+.compatibility-level--medium {
+  background-color: #fff4e5;
+  color: #f08c00;
+}
+
+/* Red */
+.compatibility-level--bad {
+  background-color: #ffe3e3;
+  color: #f03e3e;
+}
+
+.candidates-table th.col-persona,
+.candidates-table td.col-persona{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.candidates-table td.col-persona .compatibility-level{
+  margin: 0 auto;
+}
