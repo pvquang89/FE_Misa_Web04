@@ -1,5 +1,5 @@
 # Demo giao diện danh sách ứng viên (AMIS Tuyển dụng)
-## Link demo: https://pvquang89.github.io/FE_Misa_Web04/
+
 
 ## Chức năng
 
